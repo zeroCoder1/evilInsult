@@ -16,6 +16,7 @@ body {
   margin: 0px;
 }
 
+
 ::-moz-selection { 
   color: white;
   background: black;
@@ -76,11 +77,6 @@ body {
 	letter-spacing: 1.2px;
 	font-size: 15px;
 	color: rgb(256, 256, 256); 
-	position: fixed;     
-	text-align: center;    
-	bottom: 20px; 
-	width: 100%;
-	color: rgb(256, 256, 256);
 }
 
 @media only screen and ( max-device-width: 414px ) {
@@ -101,13 +97,8 @@ body {
 .footer { 
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1.2px;
-	font-size: 35px;
+	font-size: 30px;
 	color: rgb(256, 256, 256); 
-	position: fixed;     
-	text-align: center;    
-	bottom: 20px; 
-	width: 100%;
-	color: rgb(256, 256, 256);
   }
 
 } 
