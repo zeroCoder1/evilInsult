@@ -1,4 +1,5 @@
  @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
  *,
  :before, :after {
   box-sizing: border-box;
@@ -14,6 +15,14 @@ body {
   background-color:rgb(35, 35, 61);
   margin: 0px;
 }
+
+.footer{ 
+	position: fixed;     
+	text-align: center;    
+	bottom: 20px; 
+	width: 100%;
+	color: rgb(256, 256, 256);
+}  
 
 ::-moz-selection { 
   color: white;
@@ -52,7 +61,7 @@ body {
 }
 
 .credit {
-	font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', cursive;
   font-size: 25px;
   letter-spacing: 1.2px;
   text-align: right;
@@ -63,6 +72,16 @@ body {
   padding-bottom: 1px;
   letter-spacing: 2px;
   color: rgb(181, 57, 82);
+}
+
+.link { color: rgb(256, 256, 256); 
+	text-decoration:none
+} 
+.footer { 
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1.2px;
+	font-size: 15px;
+	color: rgb(256, 256, 256); 
 }
 
 @media only screen and ( max-device-width: 414px ) {
