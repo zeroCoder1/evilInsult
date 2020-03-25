@@ -1,0 +1,203 @@
+ @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+ *,
+ :before, :after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  align-items: center;
+  background-color:rgb(35, 35, 61);
+  margin: 0px;
+}
+
+::-moz-selection { 
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+.main-content {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 45px;
+  letter-spacing: 1.2px;
+  text-align: left;
+  line-height: 1.5em;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 1px;
+  letter-spacing: 2px;
+}
+
+.dash {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 45px;
+	text-align: left;
+	line-height: 1.5em;
+	padding-top: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 1px;
+	letter-spacing: 2px;
+	color: rgb(181, 57, 82);
+}
+
+.credit {
+	font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+  letter-spacing: 1.2px;
+  text-align: right;
+  line-height: 1.5em;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 1px;
+  letter-spacing: 2px;
+  color: rgb(181, 57, 82);
+}
+
+@media only screen and ( max-device-width: 414px ) {
+  .main-content {
+    font-size: 80px;
+    padding-top: 30px;
+  }
+
+  .dash {
+	font-size: 80px;
+    padding-top: 30px;
+}
+} 
+
+:root {
+	--delay: 0;
+	--duration: 800ms;
+	--iterations: 1;
+}
+/* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+
+
+.main-content,
+.main-content::after {
+	-webkit-animation-delay: var(--animation-delay, 2s);
+	        animation-delay: var(--animation-delay, 2s);
+	-webkit-animation-iteration-count: var(--iterations, 1);
+	        animation-iteration-count: var(--iterations, 1);
+	-webkit-animation-duration: var(--duration, 800ms);
+	        animation-duration: var(--duration, 800ms);
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	-webkit-animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+	        animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.main-content {
+	--animation-delay: var(--delay, 0);
+	--animation-duration: var(--duration, 800ms);
+	--animation-iterations: var(--iterations, 1);
+	-webkit-animation-name: clip-text;
+	        animation-name: clip-text;
+	color: rgb(250, 250, 250);
+	cursor: default
+	
+}
+
+.main-content::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color:rgb(181, 57, 82);
+		-webkit-transform: scaleX(0);
+		        transform: scaleX(0);
+		-webkit-transform-origin: 0 50%;
+		        transform-origin: 0 50%;
+		pointer-events: none;
+		-webkit-animation-name: text-revealer;
+		        animation-name: text-revealer;
+	}
+
+
+@-webkit-keyframes clip-text {
+	from {
+		-webkit-clip-path: inset(0 100% 0 0);
+		        clip-path: inset(0 100% 0 0);
+	}
+	to {
+		-webkit-clip-path: inset(0 0 0 0);
+		        clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes clip-text {
+	from {
+		-webkit-clip-path: inset(0 100% 0 0);
+		        clip-path: inset(0 100% 0 0);
+	}
+	to {
+		-webkit-clip-path: inset(0 0 0 0);
+		        clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@-webkit-keyframes text-revealer {
+	
+	0%, 50% {
+		-webkit-transform-origin: 0 50%;
+		        transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		-webkit-transform-origin: 100% 50%;
+		        transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		-webkit-transform: scaleX(1);
+		        transform: scaleX(1);
+	}
+	
+	100% {
+		-webkit-transform: scaleX(0);
+		        transform: scaleX(0);
+	}
+}
+
+
+@keyframes text-revealer {
+	
+	0%, 50% {
+		-webkit-transform-origin: 0 50%;
+		        transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		-webkit-transform-origin: 100% 50%;
+		        transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		-webkit-transform: scaleX(1);
+		        transform: scaleX(1);
+	}
+	
+	100% {
+		-webkit-transform: scaleX(0);
+		        transform: scaleX(0);
+	}
+}
