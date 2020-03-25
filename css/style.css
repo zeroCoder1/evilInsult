@@ -93,7 +93,18 @@ body {
   .dash {
 	font-size: 80px;
     padding-top: 30px;
-}
+  }
+
+  .link { color: rgb(256, 256, 256); 
+	text-decoration:none
+} 
+
+.footer { 
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1.2px;
+	font-size: 15px;
+	color: rgb(256, 256, 256); 
+ }
 } 
 
 :root {
