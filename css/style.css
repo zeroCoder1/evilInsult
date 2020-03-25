@@ -1,5 +1,7 @@
  @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+ @import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
  *,
  :before, :after {
   box-sizing: border-box;
@@ -23,6 +25,18 @@ body {
 	width: 100%;
 	color: rgb(256, 256, 256);
 }  
+
+.button-container {
+	font-family: "Inconsolata", monospace;
+	font-size: 1.13em;
+	font-weight: bold;
+	display: flex;
+	position: fixed;     
+	align-items: center;
+	justify-content: center;   
+	bottom: 70px; 
+	width: 100%;
+}
 
 ::-moz-selection { 
   color: white;
@@ -107,7 +121,7 @@ body {
  }
 } 
 
-:root {
+:body {
 	--delay: 0;
 	--duration: 800ms;
 	--iterations: 1;
