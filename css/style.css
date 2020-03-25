@@ -74,9 +74,11 @@ body {
   color: rgb(181, 57, 82);
 }
 
-.link { color: rgb(256, 256, 256); 
-	text-decoration:none
+.link { 
+	color: rgb(256, 256, 256); 
+	text-decoration:none;
 } 
+
 .footer { 
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1.2px;
@@ -96,13 +98,13 @@ body {
   }
 
   .link { color: rgb(256, 256, 256); 
-	text-decoration:none
+	text-decoration:none;
 } 
 
 .footer { 
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1.2px;
-	font-size: 15px;
+	font-size: 30px;
 	color: rgb(256, 256, 256); 
  }
 } 
