@@ -28,7 +28,7 @@
     <script>
         loadInsult();
         function loadInsult() {
-            $.getJSON('https://suprvid.herokuapp.com/jokes/random', function (data) {
+            $.getJSON('https://evilinsult.com/generate_insult.php?lang=en&type=json', function (data) {
                 var text = `<br><br>
              <p class="main-content"> ${data.insult}<br><br> <p class="dash">—</p></p>
              <p class="credit">${data.createdby}<br><br></p>`
